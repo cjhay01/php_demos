@@ -34,6 +34,7 @@ if (isset($_POST['clear2'])) {
     $_SESSION['tasks'] = [];
 }
 
+// DEMO 3 -- Input validation & calculation
 if (isset($_POST['weight']) && isset($_POST['height'])) {
 
     if (trim($_POST['weight']) == 0 || trim($_POST['height']) == 0) {
@@ -46,11 +47,12 @@ if (isset($_POST['weight']) && isset($_POST['height'])) {
     }
 }
 
+// DEMO 3 -- Clear output
 if (isset($_POST['clear3'])) {
     unset($_SESSION['bmi_result']);
 }
 
-// PRG pattern: redirect back to index.php after processing
+// PRG (Post/Redirect/Get) pattern: redirect back to index.php after processing
 header('Location: /php_demo2/');
 exit;
 ?>

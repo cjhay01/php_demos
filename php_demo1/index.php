@@ -26,7 +26,7 @@
             <li>
                 <p>Dynamic data with variables</p>
                 <div class="code-block">
-                    <?php $name = "Ian"; ?>
+                    <?php $name = "Jose Rizal"; ?>
                     <code>
                         <?php
                         echo "Hello, $name!";
@@ -44,7 +44,7 @@
                 </div>
             </li>
             <li>
-                <?php $num1 = 30;
+                <?php $num1 = 10;
                 $num2 = 20;
                 $sum = $num1 + $num2 ?>
                 <p>Display the sum of two numbers (<?= $num1 ?> and <?= $num2 ?>)</p>

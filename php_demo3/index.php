@@ -38,7 +38,7 @@ $result = $conn->query($sql);
                         "   <input type='checkbox' data-task-id=" . $row['id'] . "> " .
                         "   <p id='task" . $row['id'] . "'>" . $row['task'] . "</p>" .
                         "   <form action='task_form.php' method='post' style='display:inline;'>" .
-                        "   <input type='hidden' name='updated_task' id='updated_task" . $row['id'] . "'>" .
+                        "       <input type='hidden' name='updated_task' id='updated_task" . $row['id'] . "'>" .
                         "       <button class='btn-action btn-item-update' value='" . $row['id'] . "'>Update</button>" .
                         "   </form>" .
                         "   <form action='task_form.php' method='post' style='display:inline;'>" .
