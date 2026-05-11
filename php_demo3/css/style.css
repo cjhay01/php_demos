@@ -1,0 +1,113 @@
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  font-family: "Josefin Sans", sans-serif;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+code {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: large;
+  display: block;
+  margin: 10px 0;
+}
+
+button {
+  background-color: lightgray;
+  color: black;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px 0;
+}
+
+.btn-danger {
+  background-color: rgb(201, 60, 60);
+  color: white;
+}
+
+.btn-action {
+  background-color: rgb(60, 113, 201);
+  color: white;
+}
+
+button:hover {
+  background-color: gray;
+}
+
+button.btn-danger:hover {
+  background-color: rgb(245, 99, 99);
+}
+
+button.btn-action:hover {
+  background-color: rgb(121, 167, 236);
+}
+
+.demo-checklist {
+  list-style: none;
+  width: 65%;
+  border: 1px solid black;
+  padding: 0;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.demo-task-item {
+  display: grid;
+  grid-template-columns: auto minmax(200px, 1fr) auto auto;
+  justify-content: start;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 5px;
+}
+
+.demo-task-item:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+.guide-container {
+  transition: max-height 0.5s ease-in-out;
+}
+
+.collapsed .guide-section {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+  border: none;
+}
+
+.collapsed .guide-section:hover {
+  max-height: 1000px;
+}
+
+pre {
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #ccc;
+}
+
+.guide-toggle {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background-color: #f4f4f4;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
